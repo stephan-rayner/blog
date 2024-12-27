@@ -1,0 +1,4 @@
+baseURL = "https://stephan-rayner.github.io/"
+languageCode = "en-us"
+title = "Stephan Rayner"
+theme="hugo-PaperMod"

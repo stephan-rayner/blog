@@ -1,0 +1,4 @@
+[submodule "stephan-rayner/public"]
+	path = stephan-rayner/public
+	url = git@github.com:stephan-rayner/stephan-rayner.github.io.git
+	branch = main
