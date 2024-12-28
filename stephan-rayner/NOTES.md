@@ -7,3 +7,4 @@ Beyond the deeply technical, some of the most valuable lessons came from observi
 
 A blog about how I do my weekly Log may help someone, the way it did for me when BC@GL showed it to me
 
+Columnar vs Row Database, this one could have some sass to it
