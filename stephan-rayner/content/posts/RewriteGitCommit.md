@@ -6,7 +6,7 @@ title = '📝 How to Rewrite a Git Commit with `rebase -i`'
 
 <!-- ## 📝 How to Rewrite a Git Commit with `rebase -i` -->
 
-Ever make a commit and then immediately realize the message could be clearer or you typed “fix” as “fiz”? Don’t worry — Git has your back.
+Ever make a commit and then immediately realize the message could be clearer or you typed “fix” as “fiz”? Don’t worry — we can change that.
 
 If the commit isn’t already pushed (or you're okay force-pushing), you can easily rename it using **interactive rebase**. Here’s how.
 
@@ -66,8 +66,6 @@ git push --force
 git push -f origin YOUR_GIT_BRANCH_HERE
 ```
 
-
-
 Personally, I am fond of this method as it injects the name of the branch into the command at execution time.
 
 ```bash
@@ -77,3 +75,5 @@ git push -f origin $(git branch | grep '*' | tr -d '* [:space:]')
 ------
 
 That’s it! Next time you typo your commit message or want to clean things up, interactive rebase is your friend.
+
+I hope that helped 😀!
