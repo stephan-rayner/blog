@@ -2,3 +2,6 @@
 	path = stephan-rayner/public
 	url = git@github.com:stephan-rayner/stephan-rayner.github.io.git
 	branch = main
+[submodule "stephan-rayner/themes/hugo-PaperMod"]
+	path = stephan-rayner/themes/hugo-PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
