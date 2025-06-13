@@ -1,5 +1,5 @@
 +++
-date = '2025-04-15T10:41:09-03:00'
+date = '2025-04-15T10:41:09-04:00'
 draft = false
 title = '📝 How to Rewrite a Git Commit with `rebase -i`'
 tags = ["git"]
