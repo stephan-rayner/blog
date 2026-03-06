@@ -10,6 +10,7 @@ weight = 10
 
 [params]
 author = "Stephan Rayner"
+description = "Mostly technical blog of Stephan Rayner"
 
   [params.homeInfoParams]
   Title = "My Mostly Technical Personal Blog"
