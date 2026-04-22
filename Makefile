@@ -16,4 +16,8 @@ serve: ## Run Hugo dev server (with drafts)
 build: ## Build the site
 	cd stephan-rayner && hugo
 
-.PHONY: help init update status serve build
+deploy: build ## Build and deploy to GitHub Pages (must be on main branch)
+	@[ "$$(git branch --show-current)" = "main" ] || { echo "Error: deploy must be run from the main branch"; exit 1; }
+	cd stephan-rayner/public && git add . && git commit -m "Rebuild site" && git push origin main
+
+.PHONY: help init update status serve build deploy
