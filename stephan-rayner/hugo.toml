@@ -8,6 +8,11 @@ name = "Tags"
 url = "tags/"
 weight = 10
 
+[[languages.en.menu.main]]
+name = "Archives"
+url = "/archives/"
+weight = 20
+
 [params]
 author = "Stephan Rayner"
 description = "Mostly technical blog of Stephan Rayner"
