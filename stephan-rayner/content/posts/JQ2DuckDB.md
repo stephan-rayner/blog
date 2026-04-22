@@ -1,7 +1,12 @@
-+++ date = '2025-01-30T11:35:42-05:00'
++++
+date = '2025-01-30T11:35:42-05:00'
 draft = false
 title = "DuckDB Has Replaced JQ For Me"
 tags = ["database", "tools"]
+
+[cover]
+image = "images/duckdb-jq.jpg"
+alt = "Mother duck with ducklings in the water"
 +++
 
 ## The Problem
