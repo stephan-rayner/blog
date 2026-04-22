@@ -11,10 +11,24 @@ weight = 10
 [params]
 author = "Stephan Rayner"
 description = "Mostly technical blog of Stephan Rayner"
+ShowCodeCopyButtons = true
+ShowToc = true
+TocOpen = false  # collapsed by default
+ShowReadingTime = true
+ShowWordCount = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+defaultTheme = "auto"
+enableRobotsTXT = true
 
-  [params.homeInfoParams]
-  Title = "My Mostly Technical Personal Blog"
-  Content = """
+[params.editPost]
+URL = "https://github.com/stephan-rayner/blog/blob/main/stephan-rayner/content"
+Text = "Suggest Changes"
+appendFilePath = true
+
+[params.homeInfoParams]
+Title = "My Mostly Technical Personal Blog"
+Content = """
 👋 Welcome to my personal blog!
 
 At its heart, this blog is about three things: preserving the wisdom passed to me, refining my understanding through explanation, and inviting others into the messy joy of figuring things out together. It’s for them, and for me. 🌱
