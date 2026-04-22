@@ -8,17 +8,43 @@ name = "Tags"
 url = "tags/"
 weight = 10
 
+[[languages.en.menu.main]]
+name = "Archives"
+url = "/archives/"
+weight = 20
+
 [params]
 author = "Stephan Rayner"
 description = "Mostly technical blog of Stephan Rayner"
+ShowCodeCopyButtons = true
+ShowToc = true
+TocOpen = false  # collapsed by default
+ShowReadingTime = true
+ShowWordCount = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+defaultTheme = "auto"
+enableRobotsTXT = true
 
-  [params.homeInfoParams]
-  Title = "My Mostly Technical Personal Blog"
-  Content = """
-👋 Welcome to my personal blog!
+[params.editPost]
+URL = "https://github.com/stephan-rayner/blog/blob/main/stephan-rayner/content"
+Text = "Suggest Changes"
+appendFilePath = true
 
-At its heart, this blog is about three things: preserving the wisdom passed to me, refining my understanding through explanation, and inviting others into the messy joy of figuring things out together. It’s for them, and for me. 🌱
-"""
+[params.profileMode]
+enabled = true
+title = "Stephan Rayner"
+subtitle = "Mostly technical writing about databases, tools, and dev experience"
+imageUrl = "images/avatar.jpg"
+imageTitle = "Stephan Rayner"
+
+  [[params.profileMode.buttons]]
+  name = "Posts"
+  url = "/posts"
+
+  [[params.profileMode.buttons]]
+  name = "Tags"
+  url = "/tags"
 
   [[params.socialIcons]]
   name = "github"

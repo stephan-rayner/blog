@@ -3,6 +3,10 @@ date = '2025-04-15T10:41:09-04:00'
 draft = false
 title = '📝 Rewriting a Git Commit Message'
 tags = ["git"]
+
+[cover]
+image = "images/rewrite-git-commit.jpg"
+alt = "Vintage typewriter with blank paper"
 +++
 
 So you started contributing to a new project and have an excellent contribution to make. You code it up, test it, and wrap it up in a commit. You are exceedingly proud of yourself and then you realize that your commit message is a little unclear and also you have a typo.

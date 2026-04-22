@@ -3,6 +3,10 @@ date = '2025-01-26T15:20:51-04:00'
 draft = false
 title = 'Column-Oriented vs Row-Oriented Databases: How to Avoid Looking Silly'
 tags = ["database"]
+
+[cover]
+image = "images/column-row-db.jpg"
+alt = "Rows of books on library shelves"
 +++
 
 ## Motivation

@@ -1,6 +1,11 @@
-+++ date = '2024-12-27T23:10:42-05:00'
++++
+date = '2024-12-27T23:10:42-05:00'
 draft = false
 title = 'This is Why I Write'
+
+[cover]
+image = "images/why-i-write.jpg"
+alt = "Person writing in notebook beside a laptop and coffee"
 +++
 
 ## I've Been Lucky
