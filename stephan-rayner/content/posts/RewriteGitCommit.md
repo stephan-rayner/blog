@@ -24,11 +24,11 @@ fix: addressing typo in cli help message for file uploads
 
 ## Step by Step Process
 
-The rest of this article focus on the process I follow when I end up in this situation, which if I am being honest after over a decade of professional work still happens regularly.
+The rest of this article focuses on the process I follow when I end up in this situation, which if I am being honest after over a decade of professional work still happens regularly.
 
 ⚠️ Warning: It is important to know that this is a rather advanced git technique where you will be rewriting your history, this should be done with caution.
 
-### Step 1: Look at your recent commits
+### Step 1: Look at Your Recent Commits
 
 Firstly, we need to figure out how far back the commit is in the log.
 
@@ -36,7 +36,7 @@ Firstly, we need to figure out how far back the commit is in the log.
 git log --oneline
 ```
 
-### Step 2: Using an interactive rebase
+### Step 2: Using an Interactive Rebase
 
 Use the number of commits you want to review. For example, if the commit is 3 commits ago:
 
@@ -46,7 +46,7 @@ git rebase -i HEAD~3
 
 This will open a text editor with a list of commits.
 
-### Step 3: Mark the commit to be renamed
+### Step 3: Mark the Commit to Be Renamed
 
 Change the word `pick` to `reword` (or just `r`) next to the commit you want to rename:
 
@@ -58,13 +58,13 @@ pick   h7i8j9k Update CI config
 
 Then save and close the file.
 
-### Step 4: Edit the commit message
+### Step 4: Edit the Commit Message
 
 Git will now prompt you to enter a new message for the commit(s) you marked with `reword`. Type your updated message, save, and close the editor.
 
-### Step 5: You are done!
+### Step 5: You Are Done!
 
-Assuming you have no conflicts, your rebase should be complete. If Git hits a conflict you will have to resolve it.
+Assuming you have no conflicts, your rebase should be complete. If Git hits a conflict you will have to resolve it. Stage your changes and then run the following command.
 
 ```bash
 git rebase --continue
@@ -72,7 +72,7 @@ git rebase --continue
 
 ## A Quick Word of Caution
 
-If you’ve already pushed the commit to a centralized repository we will have to overwrite it. Overwirting the old commit with the new one will in this case, require a force push:
+If you’ve already pushed the commit to a centralized repository we will have to overwrite it. Overwriting the old commit with the new one will in this case, require a force push:
 
 ```bash
 git push --force

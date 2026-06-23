@@ -9,15 +9,11 @@ image = "images/duckdb-jq.jpg"
 alt = "Mother duck with ducklings in the water"
 +++
 
-## The Problem
+I reach for JQ almost every day. It's fast, it's everywhere, and for quick JSON inspection it's hard to beat. But somewhere along the way I started using DuckDB for anything more complex, and I don't plan to go back.
 
-Processing JSON Lines (JSONL) data on the command line has traditionally been done using JQ, but its specialized syntax and limited functionality can make complex data operations challenging. Many developers need a more powerful and intuitive tool for JSON processing tasks.
+Here's how it works and when to use it.
 
-## A Solution
-
-DuckDB provides a SQL-based alternative to JQ that offers better performance, familiar syntax, and more advanced features for processing JSONL data. Let's explore how DuckDB can replace JQ for common JSON processing tasks.
-
-## How It Works
+## Getting Started
 
 ### Basic Setup
 
@@ -88,13 +84,12 @@ WHERE in_stock = true;
 cat data.jsonl | jq -c 'select(.in_stock == true) | {item: .product, cost: (.price * 1.2)}'
 ```
 
-## Key Benefits
+## Why It Works For Me
 
-1. **Familiar SQL Syntax**: No need to learn a new query language if you already know SQL.
-2. **Better Performance**: DuckDB's columnar storage and query optimization handle large datasets efficiently.
-3. **Automatic Type Inference**: DuckDB correctly identifies and handles data types from JSON automatically.
-4. **Advanced Features**: Easily perform complex operations like joins, window functions, and multi-source queries.
-5. **Multiple File Types**: Easily work with CSV, JSON, JSONL, and Parquet all in one query and then write out to the format of your choosing.
+- **SQL, not a new language**: I already know SQL. If I hand this off to someone else, they probably do too.
+- **Columnar performance**: Large datasets don't make it sweat.
+- **Type inference**: It figures out your types from the JSON automatically.
+- **Multi-source queries**: Mix CSV, JSON, JSONL, and Parquet in one query, write to whatever format you need.
 
 ## Example
 
@@ -144,4 +139,4 @@ Use JQ when:
 
 ## Summary
 
-DuckDB offers a more powerful and intuitive alternative to JQ for processing JSONL data. Its SQL interface, superior performance, and advanced features make it an excellent choice for both simple and complex JSON data manipulation tasks. While JQ remains useful for quick transformations, DuckDB provides a more scalable and comprehensive solution for modern data processing needs.
+If you're already comfortable with SQL, there's no real reason to struggle with JQ's syntax for complex transformations. DuckDB doesn't replace JQ entirely (I still use it daily for pretty-printing JSON), but for anything analytical or multi-source it's now my default.
